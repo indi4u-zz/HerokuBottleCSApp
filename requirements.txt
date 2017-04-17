@@ -1,6 +1,5 @@
 bottle
 pyaudio
-sys
 wave
 time
 requests
