@@ -1,0 +1,15 @@
+bottle
+pyaudio
+sys
+wave
+time
+requests
+opencv-python
+operator
+numpy
+matplotlib
+json
+uuid
+monotonic
+urllib
+urllib2
