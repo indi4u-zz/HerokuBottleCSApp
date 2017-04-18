@@ -6,6 +6,5 @@ numpy
 matplotlib
 uuid
 monotonic
-urllib
 urllib2
 opencv-python
