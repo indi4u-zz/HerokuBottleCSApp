@@ -1,3 +1,4 @@
+--allow-all-external
 bottle
 pyaudio --install-option='--allow-unverified' 
 wave
