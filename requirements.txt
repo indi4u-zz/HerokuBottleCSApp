@@ -1,6 +1,6 @@
---allow-all-external
+--allow-unverified pyaudio
 bottle
-pyaudio --install-option='--allow-unverified' 
+pyaudio 
 wave
 requests
 numpy
