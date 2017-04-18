@@ -7,4 +7,4 @@ numpy
 matplotlib
 uuid
 monotonic
-opencv-python
+
