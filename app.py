@@ -224,8 +224,8 @@ def tts():
 
 # In[ ]:
 
-run(host='localhost', port=8080, debug=True)
-
+#run(host='localhost', port=8080, debug=True)
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 
 # In[ ]:
 
