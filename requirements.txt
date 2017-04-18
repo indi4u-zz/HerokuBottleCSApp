@@ -4,7 +4,6 @@ wave
 requests
 numpy
 matplotlib
-json
 uuid
 monotonic
 urllib
