@@ -2,7 +2,6 @@ bottle
 pyaudio
 wave
 requests
-operator
 numpy
 matplotlib
 json
