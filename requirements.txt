@@ -1,9 +1,7 @@
 bottle
 pyaudio
 wave
-time
 requests
-opencv-python
 operator
 numpy
 matplotlib
@@ -12,3 +10,4 @@ uuid
 monotonic
 urllib
 urllib2
+opencv-python
