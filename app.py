@@ -1,4 +1,3 @@
-
 # coding: utf-8
 # Computer Vision API
 from __future__ import print_function
