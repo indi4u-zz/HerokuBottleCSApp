@@ -15,6 +15,7 @@ import requests
 import cv2
 import operator
 import numpy as np
+
 # Import library to display results
 import matplotlib.pyplot as plt
 from bottle import request
