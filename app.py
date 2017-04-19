@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 from bottle import request
 from bottle import static_file,get
 
-os.chdir("C:\Indira\Code\BottleApp")
+#os.chdir("C:\Indira\Code\BottleApp")
 
 
 # In[2]:
