@@ -19,10 +19,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from bottle import request
 from bottle import static_file,get
-
-#os.chdir("C:\Indira\Code\BottleApp")
-
-
 # In[2]:
 
 _url = 'https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?'
