@@ -2,11 +2,10 @@
 --allow-unverified pyaudio
 monotonic
 bottle
-pyaudio 
 wave
 requests
 numpy
 matplotlib
 uuid
-monotonic
+
 
