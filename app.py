@@ -86,10 +86,8 @@ def processRequest( json, data, headers, params ):
             print( "Error code: %d" % ( response.status_code ) )
             print( "Message: %s" % ( response.json()['message'] ) )
 
-        break
-        
+        break        
     return result
-
 
 # In[4]:
 
