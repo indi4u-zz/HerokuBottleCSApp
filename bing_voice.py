@@ -8,7 +8,7 @@ import json
 import uuid
 import wave
 import io
-from monotonic import monotonic
+import monotonic
 from urllib import urlencode
 from urllib2 import Request, urlopen, URLError, HTTPError
 
