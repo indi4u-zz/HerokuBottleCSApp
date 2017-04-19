@@ -1,4 +1,3 @@
---allow-unverified pyaudio
 monotonic
 bottle
 wave
