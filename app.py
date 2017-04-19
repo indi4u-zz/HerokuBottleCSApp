@@ -117,8 +117,6 @@ def edit():
 @route('/vision')
 def vision():
     return(template("vision.tpl"))
-
-
 # In[7]:
 
 @route('/vision', method = 'POST')
