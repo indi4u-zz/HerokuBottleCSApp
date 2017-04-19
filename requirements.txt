@@ -7,5 +7,4 @@ requests
 numpy
 matplotlib
 uuid
-pyaudio
 
