@@ -32,7 +32,6 @@ def img(filepath):
 @get("/tmp/upload/<filepath:re:.*\.(jpg|png|gif|ico|svg)>")
 def img(filepath):
     return static_file(filepath, root="tmp/upload/")
-
     
 @get("/static/css/<filepath:re:.*\.css>")
 def css(filepath):
