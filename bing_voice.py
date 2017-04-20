@@ -1,7 +1,5 @@
 '''
-Bing Speech To Text (STT) and Text To Speech (TTS)
-
-based on https://github.com/Uberi/speech_recognition
+Bing Speech To Text (STT) and Text To Speech (TTS) based on https://github.com/Uberi/speech_recognition
 '''
 
 import json
