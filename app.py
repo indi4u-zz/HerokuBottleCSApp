@@ -14,6 +14,7 @@ import requests
 import cv2
 import operator
 import numpy as np
+#import httplib, urllib, base64
 
 # Import library to display results
 import matplotlib.pyplot as plt
@@ -216,5 +217,27 @@ def tts():
 
 
 
+def spellcheck():
+   
+    headers = {
+    # Request headers
+    'Ocp-Apim-Subscription-Key': 'baf9b2caff1849c08a4428bf637cbbb4',
+    'Content-Type':  'application/x-www-form-urlencoded'
+    }
+
+    params = urllib.urlencode({
+        # Request parameters
+        'mode': 'proof',
+        'mkt': 'en-us',
+    })
+    try:
+        conn = httplib.HTTPSConnection('api.cognitive.microsoft.com')
+        conn.request("GET", "/bing/v5.0/spellcheck/?%s" % params, "I hav no money", headers)
+        response = conn.getresponse()
+        data = response.read()
+        print(data)
+        conn.close()
+    except Exception as e:
+        print("[Errno {0}] {1}".format(e.errno, e.strerror))
 
 
