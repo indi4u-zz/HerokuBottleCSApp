@@ -42,7 +42,6 @@ def js(filepath):
 
 
 # In[3]:
-
 def processRequest( json, data, headers, params ):
 
     """
