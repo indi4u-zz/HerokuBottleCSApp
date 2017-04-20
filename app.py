@@ -1,12 +1,10 @@
 # coding: utf-8
 # Computer Vision API
 from __future__ import print_function
-import site
 import bing_voice
 from bing_voice import *
 import pyaudio
 import sys
-
 import wave
 import os
 from bottle import route, run
