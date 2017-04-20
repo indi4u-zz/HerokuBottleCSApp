@@ -1,6 +1,5 @@
-# coding: utf-8
-# Computer Vision API
 
+# Computer Vision API
 from __future__ import print_function
 import bing_voice
 from bing_voice import *
