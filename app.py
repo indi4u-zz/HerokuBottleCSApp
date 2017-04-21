@@ -1,4 +1,3 @@
-# Computer Vision API
 from __future__ import print_function
 import monotonic
 import bing_voice
