@@ -38,7 +38,7 @@ def css(filepath):
 def js(filepath):
     return static_file(filepath, root="static/js/")
 
-def processRequest( json, data, headers, params )
+def processRequest( json, data, headers, params ):
     """
     Helper function to process the request to Project Oxford
 
