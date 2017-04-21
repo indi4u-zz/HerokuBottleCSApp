@@ -195,16 +195,9 @@ def tts():
         wf.writeframes(data)
         wf.close()
 
-
-    #return template('tts.tpl', info)
-
-
-# In[18]:
-
 @route('/tts')
 def tts():      
     return(template('tts.tpl'))
-
 
 #run(host='localhost', port=8080, debug=True)
 #run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
