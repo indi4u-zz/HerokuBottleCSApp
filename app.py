@@ -160,9 +160,7 @@ def upload():
         
         return template('visionWImg.tpl',image = filename)  
 
-
 # Speech Recognition API.
-
 # In[8]:
 
 ## Text To Speech
