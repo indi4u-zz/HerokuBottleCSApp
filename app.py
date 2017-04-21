@@ -98,9 +98,6 @@ def renderResultOnImage( result, img ):
         cv2.putText( img, desc, (100,200), cv2.FONT_HERSHEY_SCRIPT_SIMPLEX, 1, (73,25,180), 2 )
         print(desc)
 
-
-# In[6]:
-
 @route('/edit')
 def edit():
     info = []
