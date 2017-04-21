@@ -39,8 +39,6 @@ def css(filepath):
 def js(filepath):
     return static_file(filepath, root="static/js/")
 
-
-# In[3]:
 def processRequest( json, data, headers, params ):
 
     """
