@@ -85,7 +85,6 @@ def processRequest( json, data, headers, params ):
 # In[4]:
 
 def renderResultOnImage( result, img ):
-   
     """Display the obtained results onto the input image"""
 
     R = int(result['color']['accentColor'][:2],16)
