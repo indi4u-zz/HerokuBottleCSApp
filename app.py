@@ -9,8 +9,6 @@ import requests
 import cv2
 import operator
 import numpy as np
-#import httplib, urllib, base64
-# Import library to display results
 import matplotlib.pyplot as plt
 
 # In[2]:
