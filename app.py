@@ -1,12 +1,8 @@
 from __future__ import print_function
-import monotonic
-import bing_voice
-from bing_voice import *
-import pyaudio
 import sys
 import wave
 import os
-from bottle import route, run
+from bottle import route, run,static_file,get,request
 from bottle import template
 import time 
 import requests
@@ -16,8 +12,7 @@ import numpy as np
 #import httplib, urllib, base64
 # Import library to display results
 import matplotlib.pyplot as plt
-from bottle import request
-from bottle import static_file,get
+
 # In[2]:
 _url = 'https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?'
 _key = 'ddd4c6b08a344f8494939e814aa45339'
@@ -154,42 +149,6 @@ def upload():
 # Speech Recognition API.
 # In[8]:
 
-## Text To Speech
-@route('/tts',method = "POST")
-def tts():      
-    # get a key from https://www.microsoft.com/cognitive-services/en-us/speech-api
-    BING_KEY = '756f8cbc3ad54b209076e4e41b51ecc2'
-    CHUNK_SIZE = 2048
-
-    t   = request.forms.get('t')
-    text = t # " Hi there , welcome to this demo !"
-
-    bing = BingVoice(BING_KEY)
-    data = bing.synthesize(text)
-
-    pa = pyaudio.PyAudio()
-    stream = pa.open(format=pyaudio.paInt16,
-                     channels=1,
-                     rate=16000,
-                     output=True,
-                     # output_device_index=1,
-                     frames_per_buffer=CHUNK_SIZE)
-
-    stream.write(data)
-    stream.close()
-
-    if len(text) >= 3:
-        wf = wave.open(sys.argv[2], 'wb')
-        wf.setframerate(16000)
-        wf.setnchannels(1)
-        wf.setsampwidth(2)
-
-        wf.writeframes(data)
-        wf.close()
-
-@route('/tts')
-def tts():      
-    return(template('tts.tpl'))
 
 #run(host='localhost', port=8080, debug=True)
 #run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
