@@ -36,7 +36,6 @@ def processRequest( json, data, headers, params ):
     while True:
 
         response = requests.request( 'post', _url, json = json, data = data, headers = headers, params = params )
-
         if response.status_code == 429: 
 
             print( "Message: %s" % ( response.json()['message'] ) )
