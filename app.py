@@ -11,8 +11,6 @@ import operator
 import numpy as np
 import matplotlib.pyplot as plt
 
-print("Started")
-
 _url = 'https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?'
 _key = 'ddd4c6b08a344f8494939e814aa45339'
 _maxNumRetries = 10  
