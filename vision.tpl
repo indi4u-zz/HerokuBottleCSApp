@@ -21,8 +21,7 @@
 <div id="container" style="left: 0px;">
 <section id="content">
     
-<header>
-    
+<header>    
 	<h1>		
          Computer Vision API
 	</h1>
