@@ -33,7 +33,6 @@ def processRequest( json, data, headers, params ):
     retries = 0
     result = None
     while True:
-
         response = requests.request( 'post', _url, json = json, data = data, headers = headers, params = params )
         if response.status_code == 429: 
 
