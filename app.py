@@ -1,4 +1,5 @@
 from __future__ import print_function
+import cv2
 import sys
 import wave
 import os
@@ -6,7 +7,6 @@ from bottle import route, run,static_file,get,request
 from bottle import template
 import time 
 import requests
-import cv2 
 import operator
 import numpy as np
 import matplotlib.pyplot as plt
