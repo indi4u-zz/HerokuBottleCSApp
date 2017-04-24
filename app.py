@@ -6,7 +6,7 @@ from bottle import route, run,static_file,get,request
 from bottle import template
 import time 
 import requests
-import cv2
+import cv2 #please work
 import operator
 import numpy as np
 import matplotlib.pyplot as plt
