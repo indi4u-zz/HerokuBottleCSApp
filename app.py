@@ -134,12 +134,6 @@ def upload():
         
         return template('visionWImg.tpl',image = filename)  
 
-# Speech Recognition API.
-# In[8]:
-
-
-#run(host='localhost', port=8080, debug=True)
-#run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 
 
 @route('/spellcheck')
